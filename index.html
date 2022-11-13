@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Убираем увеление на моб когда нажимаешь на инпут -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
-    <script src="http://172.20.10.3:5000/socket.io/socket.io.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
     <script type="text/javascript">
         window.addEventListener('load', () => {
-            // const URL = process.env.URL;
-            const socket = io('http://172.20.10.3:5000');
+            const URL = process.env.URL;
+            const socket = io(URL);
 
             const form = document.getElementById("form");
             const input = document.getElementById("input");
